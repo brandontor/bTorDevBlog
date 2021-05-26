@@ -1,0 +1,5 @@
+- New dev blog idea 
+- going post new entries weekly hopefully
+- make sure that i keep best practices
+- post links to new projects im working on wether personal or tutorial based. 
+- eventually hopefully post to github to have it hosted and be able to push and pull
