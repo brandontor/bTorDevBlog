@@ -58,6 +58,8 @@ header {
     background-position: center;
     cursor: pointer;
     justify-content: flex-end;
+    opacity: 0;
+    transition: 0.5s;
 }
 
 .toggle.active {
@@ -98,16 +100,23 @@ main {
 
 .text {
     width: 100%;
-    height: 30vh;
+    height: 60vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     z-index: 2;
 }
 
+
+.text img {
+    height: 150px;
+    opacity: 0;
+    transition: 1.5s;
+}
+
+
 .text h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 5rem;
 }
@@ -128,12 +137,16 @@ main {
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    transition: 0.2s;
+    opacity: 0;
+    transition: letter-spacing 0.2s, opacity 1.5s;
+    
 }
 
 .text a:hover {
     letter-spacing: 3px;
 }
+
+
 
 .social {
     display: flex;
@@ -153,10 +166,11 @@ main {
     margin: 10px;
     transform: scale(0.8);
     transition: 0.5s;
+    opacity: 0;
 }
 
 .social li a:hover {
-    transform: scale(0.8) translateY(-10px);
+    transform: scale(0.8) translateY(-5px);
     color: red;
 }
 
@@ -216,7 +230,7 @@ main {
 }
 
 .interestcontainer{
-    width: 100%;
+    width: 105%;
     height: 60%;
     background-color: black;
     display: flex;
